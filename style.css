@@ -1,0 +1,430 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#eef3f8;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#0f172a,#1e40af);
+    color:#fff;
+    padding-bottom:70px;
+}
+
+.navbar{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 0;
+}
+
+.logo h2{
+    font-size:34px;
+    color:#fff;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+
+.logo i{
+    color:#60a5fa;
+    margin-right:8px;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.menu a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:600;
+    font-size:17px;
+}
+
+.menu a:hover{
+    color:#60a5fa;
+    transform:translateY(-2px);
+}
+.hero{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    margin-top:60px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.profissao{
+    display:inline-block;
+    background:#2563eb;
+    padding:8px 18px;
+    border-radius:30px;
+    margin-bottom:20px;
+    font-size:14px;
+}
+
+.hero h1{
+    font-size:60px;
+    line-height:70px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#dbeafe;
+    margin-bottom:35px;
+    line-height:34px;
+}
+
+.hero-img{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-img img{
+    width:360px;
+    height:360px;
+    border-radius:50%;
+    object-fit:cover;
+    border:8px solid white;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+}
+
+.botoes{
+    display:flex;
+    gap:20px;
+}
+
+.btn,
+.btn-secundario{
+    padding:15px 30px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn{
+    background:#2563eb;
+    color:white;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    background:#1d4ed8;
+}
+
+.btn-secundario{
+    border:2px solid white;
+    color:white;
+}
+
+.btn-secundario:hover{
+    background:white;
+    color:#1e3a8a;
+}
+
+.card{
+    width:90%;
+    max-width:1100px;
+    margin:50px auto;
+    background:white;
+    padding:40px;
+    border-radius:18px;
+    border-left:6px solid #2563eb;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card h2{
+    color:#1e3a8a;
+    margin-bottom:25px;
+    font-size:32px;
+}
+
+.card p{
+    line-height:30px;
+    margin-bottom:18px;
+}
+
+.skill{
+    margin-bottom:28px;
+}
+
+.skill span{
+    font-weight:600;
+}
+
+.barra{
+    width:100%;
+    height:18px;
+    background:#dbeafe;
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:8px;
+}
+
+.progresso{
+    height:100%;
+    color:white;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding-right:10px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.html{
+    width:90%;
+    background:#2563eb;
+}
+
+.css{
+    width:85%;
+    background:#2563eb;
+}
+
+.logica{
+    width:88%;
+    background:#2563eb;
+}
+
+.c{
+    width:75%;
+    background:#2563eb;
+}
+
+.git{
+    width:70%;
+    background:#2563eb;
+}
+
+.equipe{
+    width:95%;
+    background:#2563eb;
+}
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    margin-top:30px;
+}
+
+.projeto{
+    background:#f8fafc;
+    border-radius:15px;
+    padding:30px;
+    transition:.3s;
+    border:1px solid #dbeafe;
+}
+
+.projeto:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(37,99,235,.20);
+}
+
+.icone-projeto{
+    font-size:45px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.projeto h3{
+    margin-bottom:15px;
+    color:#1e3a8a;
+}
+
+.projeto p{
+    line-height:28px;
+}
+
+.extras-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.extras-grid div{
+    background:#f8fafc;
+    padding:25px;
+    border-radius:15px;
+    border-left:5px solid #2563eb;
+}
+
+.extras-grid h3{
+    color:#1e3a8a;
+    margin-bottom:15px;
+}
+
+.extras-grid p{
+    line-height:28px;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+    margin-top:60px;
+}
+
+footer h2{
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+footer p{
+    margin:12px 0;
+    color:#d1d5db;
+    font-size:17px;
+}
+
+footer i{
+    color:#60a5fa;
+    margin-right:8px;
+}
+
+.card,
+.projeto,
+.extras-grid div,
+.hero-img img,
+.btn,
+.btn-secundario{
+    transition:all .35s ease;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+}
+
+@media(max-width:992px){
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:46px;
+        line-height:55px;
+    }
+
+    .hero-img img{
+        width:280px;
+        height:280px;
+    }
+
+    .botoes{
+        justify-content:center;
+    }
+
+}
+
+@media(max-width:768px){
+
+   .navbar{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 0;
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-top:20px;
+        gap:15px;
+    }
+
+    .card{
+        padding:25px;
+    }
+
+    .card h2{
+        font-size:26px;
+    }
+
+    .hero h1{
+        font-size:38px;
+        line-height:46px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .btn,
+    .btn-secundario{
+        width:100%;
+        text-align:center;
+    }
+
+    .botoes{
+        flex-direction:column;
+    }
+
+}
+
+@keyframes aparecer{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.hero,
+.card,
+footer{
+    animation:aparecer .8s ease;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+::selection{
+    background:#2563eb;
+    color:white;
+}
+.logo small{
+    display:block;
+    color:#93c5fd;
+    font-size:12px;
+    margin-left:38px;
+    margin-top:-5px;
+}
